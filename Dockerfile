@@ -10,6 +10,6 @@ USER deno
 # RUN deno cache deps.ts
 
 COPY . .
-RUN deno cache app/server.ts
+RUN deno cache src/server.ts
 
-CMD ["run", "--allow-net", "app/server.ts"]
+CMD ["run", "--allow-net", "src/server.ts"]
